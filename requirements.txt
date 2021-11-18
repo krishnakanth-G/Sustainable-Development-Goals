@@ -11,9 +11,6 @@ click==7.1.2
 colorama==0.4.4
 colorlover==0.3.0
 colourmap==0.1.1
-conda==4.10.3
-conda-build==3.18.11
-conda-verify==3.4.2
 cufflinks==0.17.3
 cycler==0.10.0
 cymem==2.0.5
