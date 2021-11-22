@@ -10,5 +10,3 @@ Below is the binder link for running the web app
 * ipywidgets
 * nltk
 * voila
-
-
