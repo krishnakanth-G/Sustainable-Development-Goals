@@ -1,6 +1,6 @@
 # Sustainable-Development-Goals
 
-Creating an interactive web application for self development goals classifier in a Jupyter Notebook, using the three libraries ipywidgets, voila, binder and i am using **N-gram matcher** from OSDG repository.
+Creating an interactive web application for self development goals classifier in a Jupyter Notebook, using the two libraries ipywidgets, voila and i am using **N-gram matcher** from OSDG repository.
 
 Below is the binder link for running the web app
 
