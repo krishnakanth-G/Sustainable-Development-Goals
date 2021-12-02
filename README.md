@@ -13,3 +13,11 @@ SDG_New is jupyter notebook which will accept PDF and Text files but i am not de
 * ipywidgets
 * nltk
 * voila
+
+
+## Code
+
+1.Firstly i am importing all the libraries that are
+  * ipywidgets
+  * nltk
+  * voila
