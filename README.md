@@ -17,7 +17,13 @@ SDG_New is jupyter notebook which will accept PDF and Text files but i am not de
 
 ## Code
 
-1.Firstly i am importing all the libraries that are
-  * ipywidgets
-  * nltk
-  * voila
+1) Firstly i am importing all the libraries that are
+  * ipywidgets - to create a widgtes in python
+  * nltk - to do necessary preprocessing of data
+  * voila - to run the note book as web app
+
+2) I am using the n-gram matcher function from OSDG github to match ngrams to texts.
+        For each document, it will do the follwing:
+          1. Converts document into tokens
+          2. Generates ngrams of size defined in ngram_size (1 to 4)
+          3. Crossreferences ngrams with matching ngrams
