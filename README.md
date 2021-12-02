@@ -38,3 +38,8 @@ SDG_New is jupyter notebook which will accept PDF and Text files but i am not de
 6) Importing OSDG-mappings file from OSDG GitHub which contains the SDG's mapping to fos_ids and OSDG-fosmap file from OSDG GitHub which contains the fos id and the key word for the fos id.
 7) Then I built sdg imp(), a function that takes a dictionary as a parameter. The fos ids: frequencies will be sent as parameters, and the fos ids and mappings will be intersected to retrieve the associated sdg's. After that, I use frequencies to count the importance of the sdgs, and then I return a dictionary of sdgs, importance, and keywords in the sdg.
 8) The output from the above function is given to allsdgs function to get all the sdg’s as an output in a designed manner.
+9) Then I created an upload widget to upload the text file and a submit widget to process text and find sdg’s from it.
+10) 10) The commented lines below will some extensions for widgets and voila,
+	* !jupyter nbextension enable --py widgetsnbextension --sys-prefix
+  * !jupyter serverextension enable voila --sys-prefix
+  
