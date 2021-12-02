@@ -45,6 +45,3 @@ In this web app we can upload a text file and submit it to genreate SDG's from t
 10) The lines below will enable some widget & voila extensions, and because I've already enabled them, I've commented them out.
 	* !jupyter nbextension enable --py widgetsnbextension --sys-prefix
 	* !jupyter serverextension enable voila --sys-prefix
-
-
-Note : SDG_New is a python notebook which can also take pdf as input along with text file and all other things are same with both notebooks. SDG_New notebook i am not running in binder.
