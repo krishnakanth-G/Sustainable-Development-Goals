@@ -35,7 +35,7 @@ In this web app we can upload a text file and submit it to genreate SDG's from t
    * Crossreferences ngrams with matching ngrams 
    * The matcher function will return two indices that are index 0 which contains ngram indices and index 1 which contains frequencies list respectively
    
-3) fos_names and fos_ids are from OSDG which contains the unique keywords and their corresponding ids. Then I am creating an object for n-gram matcher with fos_names as n grams, 1 to 4 as ngrams size, lowercase as true and pattern using re by defining empty space as boundaries & word in between as parameters.
+3) fos_names and fos_ids are from OSDG which contains the unique keywords and their corresponding ids. Then I am creating an object for n-gram matcher with fos_names as n-grams, 1 to 4 as n-grams size, lowercase as true and pattern as parameters.
 4) Preprocessing is a function that uses nltk to preprocess the given text. I'm lowering the text, eliminating stop words, and combining the cleaned text back into the original.
 5) Then I wrote a function mapping_ids() which takes text as parameter. This function will take the text and send it to match function by n-gram matcher object. Then the match function will return the ngrams indices (as per fos names) and their frequencies in two lists. After getting these lists the mapping_ids function will map the ngrmas indices to fos_ids and return a dictionary of fos_ids and their corresponding frequencies.
 6) Importing OSDG-mappings file from OSDG GitHub which contains the SDG's mapping to fos_ids and OSDG-fosmap file from OSDG GitHub which contains the fos id and the key word for the fos id.
