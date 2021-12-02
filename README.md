@@ -15,7 +15,7 @@ SDG_New is jupyter notebook which will accept PDF and Text files but i am not de
 * voila
 
 
-## Code
+## Code writeup
 
 1) Firstly i am importing all the libraries which are required
    * ipywidgets - to create a widgtes in python
@@ -39,7 +39,9 @@ SDG_New is jupyter notebook which will accept PDF and Text files but i am not de
 7) Then I built sdg imp(), a function that takes a dictionary as a parameter. The fos ids: frequencies will be sent as parameters, and the fos ids and mappings will be intersected to retrieve the associated sdg's. After that, I use frequencies to count the importance of the sdgs, and then I return a dictionary of sdgs, importance, and keywords in the sdg.
 8) The output from the above function is given to allsdgs function to get all the sdg’s as an output in a designed manner.
 9) Then I created an upload widget to upload the text file and a submit widget to process text and find sdg’s from it.
-10) 10) The commented lines below will some extensions for widgets and voila,
+10) The lines below will enable some widget extensions & voila, and because I've already enabled them, I've commented them out.
 	* !jupyter nbextension enable --py widgetsnbextension --sys-prefix
-  * !jupyter serverextension enable voila --sys-prefix
+	* !jupyter serverextension enable voila --sys-prefix
+
+
   
