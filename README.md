@@ -26,8 +26,10 @@ SDG_New is jupyter notebook which will accept PDF and Text files but i am not de
    * numpy - to work with arrays
    * re - to specify a set of strings that matches it
    
-2) I am using the n-gram matcher function from OSDG github to match ngrams to texts.
-        For each document, it will do the follwing:
-          1. Converts document into tokens
-          2. Generates ngrams of size defined in ngram_size (1 to 4)
-          3. Crossreferences ngrams with matching ngrams
+2) I am using the n-gram matcher function from OSDG github to match ngrams to texts.For each document, it will do the follwing:
+   * Converts document into tokens
+   * Generates ngrams of size defined in ngram_size (1 to 4)
+   * Crossreferences ngrams with matching ngrams 
+   * The matcher function will return two indices that are index 0 which contains ngram indices and index 1 which contains frequencies list respectively
+   
+3) fos_names and fos_ids are from OSDG which contains the unique keywords and their corresponding ids. Then I am creating an object for n-gram matcher with fos_names as n grams, 1 to 4 as ngrams size, lowercase as true and pattern using re by defining empty space as boundaries & word in between as parameters.
