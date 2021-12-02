@@ -7,12 +7,15 @@ Below is the binder link for running the web app
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/krishnakanth-G/Sustainable-Development-Goals/HEAD?urlpath=%2Fvoila%2Frender%2FSDG.ipynb)
 
 In this web app we can upload a text file and submit it to genreate SDG's from the text. I am running the SDG notebook in binder. 
-SDG_New is jupyter notebook which will accept PDF and Text files but i am not deploying it in binder.
 
 ## Required libraries:
 * ipywidgets
 * nltk
 * voila
+* json
+* typing
+* numpy
+* re
 
 
 ## Code writeup
@@ -39,9 +42,9 @@ SDG_New is jupyter notebook which will accept PDF and Text files but i am not de
 7) Then I built sdg imp(), a function that takes a dictionary as a parameter. The fos ids: frequencies will be sent as parameters, and the fos ids and mappings will be intersected to retrieve the associated sdg's. After that, I use frequencies to count the importance of the sdgs, and then I return a dictionary of sdgs, importance, and keywords in the sdg.
 8) The output from the above function is given to allsdgs function to get all the sdg’s as an output in a designed manner.
 9) Then I created an upload widget to upload the text file and a submit widget to process text and find sdg’s from it.
-10) The lines below will enable some widget extensions & voila, and because I've already enabled them, I've commented them out.
+10) The lines below will enable some widget & voila extensions, and because I've already enabled them, I've commented them out.
 	* !jupyter nbextension enable --py widgetsnbextension --sys-prefix
 	* !jupyter serverextension enable voila --sys-prefix
 
 
-  
+Note : SDG_New is a python notebook which can also take pdf as input along with text file and all other things are same with both notebooks. SDG_New notebook i am not running in binder.
